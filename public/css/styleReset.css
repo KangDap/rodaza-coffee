@@ -1,0 +1,158 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(134, 115, 71);
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+    border-bottom: 4px solid white;
+}
+
+.navbar img {
+    width: 500px;
+    margin-top: 12px;
+}
+
+.hero-container {
+    background-image: url("/assets/coffee-background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-password-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h2 {
+    color: #6b4f4f;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid #6b4f4f;
+    margin: 10px 0;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus {
+    border-color: #6b4f4f;
+}
+
+button {
+    background-color: #6b4f4f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #563d3d;
+}
+
+/* FOOTER */
+footer {
+    box-shadow: 0 2px 0 5px rgb(255, 255, 255), 0 3px 50px 0 rgba(0, 0, 0, 0.5);
+    background-color: black;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+footer img {
+    width: 400px;
+    padding: 5px 0;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a {
+    color: #fff;
+    font-weight: 550;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+footer .credit p {
+    color: white;
+    transition: all .4s;
+}
+
+footer .credit p>span {
+    font-weight: 550;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+footer .credit p>span:hover {
+    color: rgb(134, 115, 71);
+}
+
+footer .credit a:hover {
+    color: rgb(134, 115, 71);
+    transition: all .4s;
+}
+
+footer .socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .socials a {
+    color: #fff;
+    transition: all .4s;
+}
+
+footer .socials a:hover {
+    color: rgb(134, 115, 71)
+}

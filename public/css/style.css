@@ -1,0 +1,376 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(134, 115, 71);
+    overflow-x: hidden;
+}
+
+/* FLOATING WHATSAPP */
+.wa {
+    position: fixed;
+    background-color: #128C7E;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.485);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    bottom: 25px;
+    right: 25px;
+    border: 0;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    transition: width .5s;
+    text-decoration: none;
+}
+
+.wa i {
+    position: absolute;
+    bottom: 10.5px;
+    right: 11.5px;
+    transition: all .5s;
+}
+
+.wa:hover i {
+    right: 220px;
+}
+
+.join {
+    position: fixed;
+    font-size: 19px;
+    font-weight: 550;
+    color: white;
+    bottom: 25px;
+    right: 0px;
+    z-index: 9999;
+    visibility: hidden;
+    transition: opacity .5s .1s;
+    opacity: 0;
+}
+
+.wa:hover .join {
+    position: fixed;
+    visibility: visible;
+    right: 48px;
+    opacity: 1;
+}
+
+.wa:hover {
+    width: 230px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.wa:hover::before {
+    visibility: hidden;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+.garis {
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.navbar img {
+    width: 400px;
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    position: absolute;
+    right: 30%;
+    bottom: 10px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+    font-weight: 550;
+}
+
+.navbar ul li a:hover {
+    color: rgb(134, 115, 77);
+}
+
+.navbar .order {
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    color: rgb(103, 100, 56);
+    background-color: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: 550;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all .3s;
+}
+
+.navbar .order:hover {
+    color: white;
+    background-color: rgb(103, 100, 56);
+    cursor: pointer;
+}
+
+.hero-container {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    position: relative;
+}
+
+.hero-container #bg1 {
+    position: absolute;
+    bottom: 0;
+    z-index: -9999;
+}
+
+.hero-container .sub-container-kiri {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: transparent;
+    height: 600px;
+    align-items: center;
+    position: relative;
+    margin: 50px 20px 0 0;
+}
+
+.hero-container .sub-container-kiri p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+    font-weight: 550;
+}
+
+.hero-container .sub-container-kiri p span {
+    color: rgb(255, 255, 255);
+}
+
+.hero-container .sub-container-kiri .title {
+    margin-top: 25px;
+    font-size: 75px;
+    line-height: 100px;
+}
+
+.hero-container .sub-container-kiri .title #title1 {
+    transform: translateX(-100px);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.285);
+}
+
+.hero-container .sub-container-kiri .title #title2 {
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.585);
+    transform: translateX(160px);
+    color: white;
+}
+
+.hero-container .sub-container-kanan img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: 0 30px 100px 0;
+}
+
+.about-container {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: all .3s;
+}
+
+.about-container h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.order {
+    margin-top: 10px;
+    color: rgb(103, 100, 56);
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 35px;
+    font-weight: 550;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all .3s;
+}
+
+.order:hover {
+    background-color: rgb(103, 100, 56);
+}
+
+.order:hover a,
+.order:hover i {
+    color: white;
+}
+
+.order a {
+    text-decoration: none;
+    color: rgb(103, 100, 56);
+}
+
+.text-wrapper {
+    width: 70%;
+    text-align: center;
+}
+
+.text-wrapper p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.text-wrapper #read-more-button {
+    text-decoration: none;
+    color: rgb(105, 91, 57);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.more-text {
+    display: none;
+}
+
+.more-text p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+    margin: 200px 0 100px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 1250px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper h1 {
+    font-size: 2.5em;
+    color: #6b4f4f;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    color: #6b4f4f;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.scroll-buttons {
+    margin-top: 20px;
+}
+
+.scroll-btn {
+    background-color: #6b4f4f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: #a67c52;
+}
+
+.product-list::-webkit-scrollbar {
+    display: none;
+}
+
+.product-container #bg2 {
+    position: absolute;
+    top: 0;
+    z-index: -9999;
+    transform: rotate(180deg);
+}
+
+.animate__animated.animate__fadeInRight {
+    --animate-duration: 1.5s;
+}

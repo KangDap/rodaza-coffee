@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f1e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/coffee-background.jpg');
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-box {
+    text-align: center;
+}
+
+.alert {
+    width: 100%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(137, 137, 137, 0.9);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.alert.alert-danger a {
+    text-decoration: none;
+    color: red;
+    font-weight: 550;
+    transition: all .3s;
+}
+
+.alert.alert-danger a:hover {
+    color: rgb(129, 0, 0);
+    transform: scale(1.05);
+}
+
+.alert.alert-success {
+    color: green;
+}
+
+.alert.alert-danger {
+    color: red;
+}
+
+h1 {
+    font-size: 2em;
+    color: #6b4f4f;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 1em;
+    color: #6b4f4f;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #6b4f4f;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f6f1;
+}
+
+input:focus {
+    border-color: #a67c52;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6b4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a67c52;
+}
+
+.extra {
+    margin-top: 10px;
+}
+
+.extra a {
+    color: #a67c52;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.extra a:hover {
+    text-decoration: underline;
+}
+
+.extra p {
+    margin-top: 10px;
+    color: #6b4f4f;
+}
